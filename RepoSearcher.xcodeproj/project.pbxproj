@@ -24,6 +24,7 @@
 		AF393F38219F2AAB001CCCED /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF393F25219F2AAA001CCCED /* GithubService.swift */; };
 		AF393F39219F2AAB001CCCED /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF393F27219F2AAB001CCCED /* AppCoordinator.swift */; };
 		AF393F3A219F2AAB001CCCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF393F28219F2AAB001CCCED /* AppDelegate.swift */; };
+		AFC90175219F33E6003A1E99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AFC90174219F33E6003A1E99 /* README.md */; };
 		E41CDBD5756BD65A03DC3645 /* Pods_RepoSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF67E398299A34E4A692A44 /* Pods_RepoSearcher.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		AF393F27219F2AAB001CCCED /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AF393F28219F2AAB001CCCED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4F4F05219F24830051DBC9 /* RepoSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC90174219F33E6003A1E99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAF67E398299A34E4A692A44 /* Pods_RepoSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		AF4F4EFC219F24830051DBC9 = {
 			isa = PBXGroup;
 			children = (
+				AFC90174219F33E6003A1E99 /* README.md */,
 				AF4F4F07219F24830051DBC9 /* RepoSearcher */,
 				AF4F4F06219F24830051DBC9 /* Products */,
 				F6E0C7E222B6BC35332B2A6B /* Pods */,
@@ -258,6 +261,7 @@
 			files = (
 				AF393F29219F2AAB001CCCED /* LaunchScreen.storyboard in Resources */,
 				AF393F36219F2AAB001CCCED /* Assets.xcassets in Resources */,
+				AFC90175219F33E6003A1E99 /* README.md in Resources */,
 				AF393F2A219F2AAB001CCCED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
