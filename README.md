@@ -17,7 +17,7 @@ $ git clone https://github.com/M-I-N/Rx-MVVM-Coordinators.git
 2) Install pods (Optional)
 
 ```bash
-$ cd Rx-MVVM-Coordinators/RepoSearcher
+$ cd Rx-MVVM-Coordinators
 $ pod install
 ```
 
