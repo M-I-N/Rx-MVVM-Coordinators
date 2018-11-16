@@ -1,6 +1,7 @@
 Rx-MVVM-Coordinators
 ====================
-![Language](https://img.shields.io/badge/language-Swift%204-orange.svg)
+![Language](https://img.shields.io/badge/language-Swift%204.2-orange.svg)
+![Pods](https://img.shields.io/badge/pods-RxSwift,%20RxCocoa-green.svg)
 ### Example of MVVM-C(oordinators) architecture implemented with RxSwift
 
 This simple app displays a list of the most starred repositories on GitHub by a language. User can choose a language to filter repositories and select repository in the list to open it in the `SFSafariViewController`.
