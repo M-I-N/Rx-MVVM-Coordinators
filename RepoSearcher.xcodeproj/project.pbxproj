@@ -12,9 +12,12 @@
 		AF4F4F0E219F24830051DBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4F4F0C219F24830051DBC9 /* Main.storyboard */; };
 		AF4F4F10219F24840051DBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4F4F0F219F24840051DBC9 /* Assets.xcassets */; };
 		AF4F4F13219F24840051DBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4F4F11219F24840051DBC9 /* LaunchScreen.storyboard */; };
+		E41CDBD5756BD65A03DC3645 /* Pods_RepoSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF67E398299A34E4A692A44 /* Pods_RepoSearcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BE6D2DA93B941EE06E7B645 /* Pods-RepoSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoSearcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepoSearcher/Pods-RepoSearcher.debug.xcconfig"; sourceTree = "<group>"; };
+		A31F0AF46D9BFB7F2B445A74 /* Pods-RepoSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoSearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepoSearcher/Pods-RepoSearcher.release.xcconfig"; sourceTree = "<group>"; };
 		AF4F4F05219F24830051DBC9 /* RepoSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4F4F08219F24830051DBC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4F4F0A219F24830051DBC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AF4F4F0F219F24840051DBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4F4F12219F24840051DBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4F4F14219F24840051DBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF67E398299A34E4A692A44 /* Pods_RepoSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41CDBD5756BD65A03DC3645 /* Pods_RepoSearcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25DC8B04E319AD20DAF72A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF67E398299A34E4A692A44 /* Pods_RepoSearcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF4F4EFC219F24830051DBC9 = {
 			isa = PBXGroup;
 			children = (
 				AF4F4F07219F24830051DBC9 /* RepoSearcher */,
 				AF4F4F06219F24830051DBC9 /* Products */,
+				F6E0C7E222B6BC35332B2A6B /* Pods */,
+				25DC8B04E319AD20DAF72A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = RepoSearcher;
 			sourceTree = "<group>";
 		};
+		F6E0C7E222B6BC35332B2A6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6D2DA93B941EE06E7B645 /* Pods-RepoSearcher.debug.xcconfig */,
+				A31F0AF46D9BFB7F2B445A74 /* Pods-RepoSearcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4F4F17219F24840051DBC9 /* Build configuration list for PBXNativeTarget "RepoSearcher" */;
 			buildPhases = (
+				28DE1F26D8CB2BCD956ECB0A /* [CP] Check Pods Manifest.lock */,
 				AF4F4F01219F24830051DBC9 /* Sources */,
 				AF4F4F02219F24830051DBC9 /* Frameworks */,
 				AF4F4F03219F24830051DBC9 /* Resources */,
+				82D93624DC95E6F2CDF6269D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28DE1F26D8CB2BCD956ECB0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepoSearcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82D93624DC95E6F2CDF6269D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RepoSearcher/Pods-RepoSearcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RepoSearcher/Pods-RepoSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF4F4F01219F24830051DBC9 /* Sources */ = {
@@ -213,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,15 +349,13 @@
 		};
 		AF4F4F18219F24840051DBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE6D2DA93B941EE06E7B645 /* Pods-RepoSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = RepoSearcher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.RepoSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +365,13 @@
 		};
 		AF4F4F19219F24840051DBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31F0AF46D9BFB7F2B445A74 /* Pods-RepoSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = RepoSearcher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.RepoSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
