@@ -50,7 +50,7 @@ class GithubService {
                     let itemsJSON = json["items"] as? [[String: Any]]
                 else { return Observable.error(ServiceError.cannotParse) }
 
-                let repositories = itemsJSON.flatMap(Repository.init)
+                let repositories = itemsJSON.compactMap(Repository.init)
                 return Observable.just(repositories)
             }
     }
